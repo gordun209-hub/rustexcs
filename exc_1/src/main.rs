@@ -1,8 +1,21 @@
 fn main() {
-    let mut x = 5;
-    println!("The value of x is: {}", x);
-    x = 6;
-    println!("The value of x is: {}", x);
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-    println!("Three hours in seconds: {}", THREE_HOURS_IN_SECONDS);
+    let y =
+    // this is a expression bec it doesnt end with ; ex: x + 1 
+    {
+        let x = 3;
+        x + 1
+    };
+    println!("The value of y is : {}", y);
+    println!(
+        "the laa is {} and stronger is {}",
+        five(),
+        five_but_stronger(2)
+    )
+}
+
+fn five() -> i32 {
+    5
+}
+fn five_but_stronger(x: i32) -> i32 {
+    x + 12
 }
