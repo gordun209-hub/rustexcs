@@ -10,7 +10,10 @@ fn main() {
         "the laa is {} and stronger is {}",
         five(),
         five_but_stronger(2)
-    )
+    );
+
+    let _four = IpAddrKind::V6;
+    let _six = IpAddrKind::V4;
 }
 
 fn five() -> i32 {
@@ -19,3 +22,9 @@ fn five() -> i32 {
 fn five_but_stronger(x: i32) -> i32 {
     x + 12
 }
+
+enum IpAddrKind {
+    V4,
+    V6,
+}
+// enums
