@@ -58,6 +58,9 @@ where
     fn value(&mut self, arg: u32) -> u32 {
         match self.value {
             Some(v) => v,
+            // thats not that good bec we cant change this value once we store
+            // thus we never come this block of code again we got value once.
+            // TODO try  to fix this with that we check hashmap first if the valie exists
             None => {
                 let v = (self.calculation)(arg);
                 self.value = Some(v);
