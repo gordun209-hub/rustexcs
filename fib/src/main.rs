@@ -15,6 +15,6 @@ fn fibonacci(n: u32) -> u32 {
 fn blastoff_fnlari() {
     for number in (1..4).rev() {
         println!("{}!", number);
-    }
+    }  
     println!("blastofff")
 }
